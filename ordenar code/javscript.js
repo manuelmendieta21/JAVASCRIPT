@@ -1,33 +1,30 @@
 /*Crea una clase Libro*/
+
 class libro{
-    libreria(titulo, autor, year, genero){
+    libreria(titulo){
         this.titulo = titulo
-        this.autor = autor
-        this.year = year
-        this.genero =genero
+        //this.autor = autor
+        //this.genero =genero
     }
     book(){
-        return `El libro ${this.titulo} es del autor ${this.autor} fecha de publicacion del año ${this.year} , se encuentra en la categroria ${this.genero} `
-    }
+        return `El libro ${this.titulo}`}
 }
 
-function validarTitulo (titulo){
+let books=[]
+
+function validarTitulo (){
     while(true){
         let titulo = prompt(`ingresa el ${i+1} libro con su titulo `);    
-        if(titulo ===null){
+        if(titulo ===null || titulo==""){
              alert('ingrese un libro');
         }
-            else{
-            if(titulo==""){ 
-                alert('ingrese un libro');
-        } 
         else{
-        break;
-    }
-    }
+        books.push(new libro(titulo));
+        console.log(titulo);
+        return titulo;
 
-}
-}
+    }
+}}
 
 function validarAutor (autor){while(true){
     let autor = prompt(`ingresa el ${i+1} el autor del libro `);    
@@ -39,7 +36,7 @@ function validarAutor (autor){while(true){
          alert('ingrese un autor');
         } 
     else{
-        break;
+        return autor;
     }
     }
 
@@ -61,26 +58,17 @@ function  validarGenero (genero){
                 return;
             }
             else{
+                alert('Ingresa un genero de los permitido: aventura, terror, fantasia')
             }
 }
 }
     }}
 
-
 for (i=0; i<3; i++)
 {
-    let arraylibros= [2];
-    //validarTitulo();
+    validarTitulo();   
+     
     //validarAutor();  
-    validarGenero();  
+    //validarGenero();  
 
 }
-
-
-// let genero = prompt("Ingresa el genero")
-//     if(genero=="aventura"|| genero =="terror"|| genero=="fantasia"){
-//         console.log(genero);
-//     } 
-//     else{
-//         alert("Ingrese un genero valido");
-//     }
