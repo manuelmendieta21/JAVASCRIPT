@@ -11,18 +11,26 @@ switch(true){
     case (ingresado ==='papel' && variable[random]==='piedra' ):    
         console.log('Gana  PAPEL  sobre  PIEDRA');
         break;
-    case 'tijera':
-        console.log('')
+    case (ingresado ==='papel' && variable[random]==='tijera'):
+        console.log('Pierdes Papel sobre Tijera')
+        break;
+    case (ingresado ==='piedra' && variable[random]==='tijera'):
+        console.log('Gana Piedra sobre Tijera')
+        break;
+    case (ingresado==='piedra' && variable[random]==='papel'):
+        console.log('Pierdes PIEDRA sobre PAPEL')
+        break;
+    case (ingresado==='tijera'&& variable[random]==='papel'):
+        console.log('Gana TIJERA sobre PAPEL')
+        break;
+    case (ingresado==='tijera' && variable[random]==='piedra'):
+        console.log('Pierdes TIJERA sobre PIEDRA')
         break;
     default:
-        console.log('no soy ninguna de las opciones')
-        break;    
-
+        console.log('no se ingreso ninguna de las opciones')
+        break;
 }
 }
-
-
-
 
 let random = Math.floor((Math.random() * 3) );
 variable[random];
