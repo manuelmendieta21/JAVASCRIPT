@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <header> <h2>Caculador de Descuentos</h2></header>
+   
+    <section>
+      <div>
+        <label>Ingresa el valor del Producto </label>
+        <input type="number" id="valorProducto"/>
+        <br>
+        <label for="">Ingresa el valor del Porcentaje</label>
+        <input type="number" id="porcentajeDescuento"/>
+        <br>   
+        <button type="button" onclick="CalcularDescuento()">Calcular</button>
+        <p id="resulP"></p>
+        </div> 
+    </section>
+    <div>Seleccione producto</div>
+    <select name="color" id="producto">
+        <option value="0">Seleccion</option>
+        <option value="1">Iphone</option>
+        <option value="2">Ipad</option>
+        <option value="3">Homepod</option>
+        <option value="4">AppleWacht</option>
+        <option value="5">Macbook</option>
+      </select>
+      <input type="text" id="codCupon"/>
+      <button type="button" onclick="productoCupon()">Comprar</button>
+      <script src="/operation.js"></script>
+</body>
+</html>

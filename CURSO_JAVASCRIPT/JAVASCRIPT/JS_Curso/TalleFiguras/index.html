@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylo.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <script src="./figuras.js"></script>
+    <title>Figuras Geometricas</title>
+</head>
+<body>
+     <tittle class="titulo">Figuras Geometricas</tittle>  
+    <label>
+        <section class="section">    
+            <img src="/JS_Curso/img/cuadrado.png" class="cuadro" alt="">
+            <h4>Calcular Cuadrado</h4>
+            <div class="cuadrado"></div>
+            <label for="InputCuadrado">Ingresar Valor:</label>
+            <div>
+                <input id="InputCuadrado" type="number"/>
+                <button type="button" onclick="CalcularPerimetroCuadrado()">Perimetro</button>
+                <button type="button" onclick="CalcularAreaCuadrado()">Area</button>
+            </div>
+        </Section>
+        <section class="section">    
+            <img src="/JS_Curso/img/triangulo.png" class="triangulo" alt="">
+            <h4>Calcular Triangulo</h4>
+            <div class="Triangulo"></div>
+            <label for="InputTriangulo">Ingresa el valor Triangulo:</label>
+            <div>
+                <input id="InputTriangulo" type="number"/>
+                <button type="button" onclick="CalcularPerimetroTriangulo()">Perimetro</button>
+              <br>
+                <input id="InputBaseT" type="number"/>
+                <input id="InputAlturaT" type="number"/>
+                <button type="button" onclick="CalcularAreaTriangulo()">Area</button>
+            </div> 
+        </section>
+            <Section class="section">
+                <div>
+                <img src="/JS_Curso/img/circulo.png" class="circulo" alt="">
+                <h4>Calcular Circulo</h4>
+                <div class="Circulo"></div>
+                <input id="InputRadioC" type="number"/>
+                <button type="button" onclick="CalcularAreaCirculo()">Calcular Area Circunferencia</button>
+                <button type="button" onclick="CalcularPerimetroCirculo()">Calcular Perimetro</button>
+                </div>
+            </labelSection>
+    </label>
+</body>
+</html>

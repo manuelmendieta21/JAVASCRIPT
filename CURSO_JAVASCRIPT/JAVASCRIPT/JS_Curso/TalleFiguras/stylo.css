@@ -1,0 +1,116 @@
+
+/*
+Cuadrado hecho en Css
+.cuadrado{
+    width: 60px;
+    height: 60px;
+    border: 3px solid #0D47A1 ;
+}
+*/
+.cuadro{
+    max-width: 5%;
+    max-height: 5%;
+}
+/*
+.Triangulo{
+    
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-top:  50px solid transparent;
+    border-left:  50px solid transparent;
+    border-bottom: 50px solid #a40b0b ;
+}
+*/
+.triangulo{
+    max-width: 7%;
+    max-height: 7%;
+}
+/*
+.Circulo{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+   background-color: blue;
+   left: 0;
+   right: 0;
+   top: 0;
+   bottom: 0;
+}
+*/
+.circulo{
+    max-width: 5%;
+    max-height: 5%;
+}
+
+.number{
+    margin: 4px;
+}
+
+.button{
+    padding: 10px;
+    border-width: 6px;
+    border-style: solid;
+    border-left-color: red;
+    border-right-color: red;
+    
+}
+
+tittle.titulo{
+    font-family: 'Permanent Marker', cursive;
+    display: inline-block;
+    position: static;
+    width: auto;
+
+}
+
+h1::after,h1::before{
+    content:'';
+    position: absolute;
+    width: 160px;
+    height: 2px;
+    background-color: black;
+    top: 0.6em;
+}
+
+/*Configuracion de la lineta titulo*/
+h1::before{
+    left:-180px     
+}
+h1::after{
+    right:-180px;
+}
+
+.section1{
+    background-color:#a40b0b;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 10px solid #0D47A1;
+}
+.section2{
+    background-color: aquamarine;
+    padding: 5px;
+    box-sizing: border-box;
+    border:10px solid #0D47A1;
+}
+.section3{
+    background-color: antiquewhite;
+    padding:5px;
+    box-sizing: border-box;
+    border: 10px solid    #0D47A1;
+}
+.h4{
+    width: 160px;
+    height: 2px;
+    padding: 5px;
+    margin: 3px;
+}
+.section{
+    display: flex;
+/*Flex-direction Permite oganizar el contnido de forma de colu*/
+    flex-direction: column;
+    background-color: rgb(226, 226, 226);
+    padding:5px;
+    box-sizing: border-box;
+    border: 10px solid    #488ef8;
+}
