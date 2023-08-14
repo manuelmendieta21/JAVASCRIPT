@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Botón de modo oscuro y modo claro</title>
+    <style>
+        :root {
+            --color-fondo: #fff;
+            --color-texto: #000;
+        }
+
+        body {
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+        }
+
+        .boton-modo {
+            background-color: var(--color-fondo);
+            color: var(--color-texto);
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .boton-modo:hover {
+            background-color: var(--color-texto);
+            color: var(--color-fondo);
+        }
+
+        .modo-oscuro {
+            --color-fondo: #000;
+            --color-texto: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Botón de modo oscuro y modo claro</h1>
+    <button class="boton-modo" onclick="document.body.classList.toggle('modo-oscuro')">Modo oscuro</button>
+
+    <p>Este es un ejemplo de cómo hacer un botón de modo oscuro y modo claro en HTML, CSS y JavaScript.</p>
+</body>
+</html>
